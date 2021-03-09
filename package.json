@@ -26,7 +26,8 @@
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' npm run build",
     "build": "tsc && node dist/index.js",
-    "test:unit": "tsc && jest --coverage"
+    "test:unit": "tsc && jest --coverage",
+    "bundle": "webpack --config webpack.config.js"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
@@ -37,5 +38,8 @@
     "tslint": "^5.12.1",
     "typescript": "^3.3.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "dist"
+  ]
 }
