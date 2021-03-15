@@ -10,7 +10,7 @@ export default class SmlSerializer {
         const wsvDocument: WsvDocument = new WsvDocument();
 
         SmlSerializer.serialzeEmptyNodes(document.emptyNodesBefore, wsvDocument);
-        document.getRoot().toWsvLines(wsvDocument, 0, document.getDefaultIndentation(), document.getEndKeyword());
+        document.root().toWsvLines(wsvDocument, 0, document.getDefaultIndentation(), document.getEndKeyword());
         SmlSerializer.serialzeEmptyNodes(document.emptyNodesAfter, wsvDocument);
 
         return wsvDocument.toString();

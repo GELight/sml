@@ -13,8 +13,22 @@ MyRootElement
 End
 `);
 
-const attrs = doc.getRoot().getAttributes();
+// All specific attributes
+// const attrs = doc.root().attributes();
+// console.log(attrs);
+
+// All specific elements
+// const elements = doc.root().elements();
+// console.log(elements);
+
+// Liste of attributes und elements
+const attributesAndElements = doc.root().nodes;
+console.log(attributesAndElements);
+
+// Element
+const attrs = doc.root().nodes[1].attributes();
 console.log(attrs);
 
-const elements = doc.getRoot().getElements();
-console.log(elements);
+// Attribut
+const values = doc.root().nodes[2].values;
+console.log(values);

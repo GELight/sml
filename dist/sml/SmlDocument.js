@@ -13,7 +13,7 @@ class SmlDocument {
         this.endKeyword = "End";
         this.defaultIndentation = null;
         if (rootElement) {
-            this.root = rootElement;
+            this.rootElement = rootElement;
         }
     }
     static parse(content) {
@@ -35,11 +35,11 @@ class SmlDocument {
     getDefaultIndentation() {
         return this.defaultIndentation;
     }
-    getRoot() {
-        return this.root;
+    root() {
+        return this.rootElement;
     }
     setRoot(root) {
-        this.root = root;
+        this.rootElement = root;
     }
     toString() {
         return SmlSerializer_1.default.serializeDocument(this);

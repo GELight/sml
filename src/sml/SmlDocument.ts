@@ -15,13 +15,13 @@ export default class SmlDocument {
     public emptyNodesBefore: SmlEmptyNode[] = [];
     public emptyNodesAfter: SmlEmptyNode[] = [];
 
-    private root: SmlElement;
+    private rootElement: SmlElement;
     private endKeyword: string = "End";
     private defaultIndentation: string = null;
 
     constructor(rootElement?: SmlElement) {
         if (rootElement) {
-            this.root = rootElement;
+            this.rootElement = rootElement;
         }
     }
 
@@ -44,12 +44,12 @@ export default class SmlDocument {
         return this.defaultIndentation;
     }
 
-    public getRoot(): SmlElement {
-        return this.root;
+    public root(): SmlElement {
+        return this.rootElement;
     }
 
     public setRoot(root: SmlElement): void {
-        this.root = root;
+        this.rootElement = root;
     }
 
     public toString(): string {

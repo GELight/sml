@@ -58,7 +58,7 @@ class SmlElement extends SmlNamedNode_1.default {
             .filter((attribute) => attribute.hasName(name))
             .length > 0;
     }
-    getAttribute(name) {
+    attribute(name) {
         const result = this.nodes
             .filter((node) => node instanceof SmlAttribute_1.default)
             .map((node) => node)
@@ -69,7 +69,7 @@ class SmlElement extends SmlNamedNode_1.default {
         }
         return result;
     }
-    getAttributes(name) {
+    attributes(name) {
         let attributes = [];
         if (!name) {
             attributes = this.nodes
@@ -91,7 +91,7 @@ class SmlElement extends SmlNamedNode_1.default {
             .filter((element) => element.hasName(name))
             .length > 0;
     }
-    getElement(name) {
+    element(name) {
         const result = this.nodes
             .filter((node) => node instanceof SmlElement)
             .map((node) => node)
@@ -102,7 +102,7 @@ class SmlElement extends SmlNamedNode_1.default {
         }
         return result;
     }
-    getElements(name) {
+    elements(name) {
         let elements = [];
         if (!name) {
             elements = this.nodes
@@ -118,19 +118,19 @@ class SmlElement extends SmlNamedNode_1.default {
         return elements;
     }
     getBoolean(attributeName) {
-        return Boolean(this.getAttribute(attributeName).getString());
+        return Boolean(this.attribute(attributeName).getString());
     }
     getNumber(attributeName) {
-        return Number(this.getAttribute(attributeName).getString());
+        return Number(this.attribute(attributeName).getString());
     }
     getString(attributeName) {
-        return this.getAttribute(attributeName).getString();
+        return this.attribute(attributeName).getString();
     }
     getStringValues(attributeName) {
-        return this.getAttribute(attributeName).getValues();
+        return this.attribute(attributeName).getValues();
     }
     getNumberValues(attributeName) {
-        return this.getAttribute(attributeName).getNumberValues();
+        return this.attribute(attributeName).getNumberValues();
     }
     toString() {
         return SmlSerializer_1.default.serializeElement(this);

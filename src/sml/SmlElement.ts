@@ -72,7 +72,7 @@ export default class SmlElement extends SmlNamedNode {
             .length > 0;
     }
 
-    public getAttribute(name: string): SmlAttribute {
+    public attribute(name: string): SmlAttribute {
         const result = this.nodes
             .filter((node) => node instanceof SmlAttribute)
             .map((node) => node as SmlAttribute)
@@ -85,7 +85,7 @@ export default class SmlElement extends SmlNamedNode {
         return result;
     }
 
-    public getAttributes(name?: string): SmlAttribute[] {
+    public attributes(name?: string): SmlAttribute[] {
         let attributes: SmlAttribute[] = [];
         if (!name) {
             attributes = this.nodes
@@ -108,7 +108,7 @@ export default class SmlElement extends SmlNamedNode {
             .length > 0;
     }
 
-    public getElement(name: string): SmlElement {
+    public element(name: string): SmlElement {
         const result = this.nodes
             .filter((node) => node instanceof SmlElement)
             .map((node) => node as SmlElement)
@@ -121,7 +121,7 @@ export default class SmlElement extends SmlNamedNode {
         return result;
     }
 
-    public getElements(name?: string): SmlElement[] {
+    public elements(name?: string): SmlElement[] {
         let elements: SmlElement[] = [];
         if (!name) {
             elements = this.nodes
@@ -137,23 +137,23 @@ export default class SmlElement extends SmlNamedNode {
     }
 
     public getBoolean(attributeName: string): boolean {
-        return Boolean(this.getAttribute(attributeName).getString());
+        return Boolean(this.attribute(attributeName).getString());
     }
 
     public getNumber(attributeName: string): number {
-        return Number(this.getAttribute(attributeName).getString());
+        return Number(this.attribute(attributeName).getString());
     }
 
     public getString(attributeName: string): string {
-        return this.getAttribute(attributeName).getString();
+        return this.attribute(attributeName).getString();
     }
 
     public getStringValues(attributeName: string): string[] {
-        return this.getAttribute(attributeName).getValues();
+        return this.attribute(attributeName).getValues();
     }
 
     public getNumberValues(attributeName: string): number[] {
-        return this.getAttribute(attributeName).getNumberValues();
+        return this.attribute(attributeName).getNumberValues();
     }
 
     public toString(): string {
