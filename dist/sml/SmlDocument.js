@@ -44,6 +44,17 @@ class SmlDocument {
     toString() {
         return SmlSerializer_1.default.serializeDocument(this);
     }
+    spath(path, index = 0) {
+        // const line = new WsvLine();
+        // line.set(path.split(" "), [], "");
+        let part = null;
+        if (!index) {
+            part = this.getRoot();
+        }
+        // const nextPart = part.
+        // part = this.spath(path, index++);
+        return part;
+    }
 }
 exports.default = SmlDocument;
 //# sourceMappingURL=SmlDocument.js.map

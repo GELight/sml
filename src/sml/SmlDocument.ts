@@ -1,9 +1,10 @@
-import SmlDocumentServer from "./SmlDocumentServer";
+import { SmlAttribute } from "..";
 import SmlElement from "./SmlElement";
 import SmlEmptyNode from "./SmlEmptyNode";
 import SmlParser from "./SmlParser";
 import SmlSerializer from "./SmlSerializer";
 import StringUtil from "./StringUtil";
+import WsvLine from "./WsvLine";
 
 export default class SmlDocument {
 
@@ -54,6 +55,22 @@ export default class SmlDocument {
 
     public toString(): string {
         return SmlSerializer.serializeDocument(this);
+    }
+
+    public spath(path: string, index: number = 0): SmlElement | SmlAttribute {
+        // const line = new WsvLine();
+        // line.set(path.split(" "), [], "");
+
+        let part: SmlElement | SmlAttribute = null;
+
+        if (!index) {
+            part = this.getRoot();
+        }
+
+        // const nextPart = part.
+        // part = this.spath(path, index++);
+
+        return part;
     }
 
 }
