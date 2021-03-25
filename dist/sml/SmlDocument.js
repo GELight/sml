@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const SmlParser_1 = __importDefault(require("./SmlParser"));
+const SmlPath_1 = __importDefault(require("./SmlPath"));
 const SmlSerializer_1 = __importDefault(require("./SmlSerializer"));
 const StringUtil_1 = __importDefault(require("./StringUtil"));
 class SmlDocument {
@@ -44,16 +45,8 @@ class SmlDocument {
     toString() {
         return SmlSerializer_1.default.serializeDocument(this);
     }
-    spath(path, index = 0) {
-        // const line = new WsvLine();
-        // line.set(path.split(" "), [], "");
-        let part = null;
-        if (!index) {
-            part = this.getRoot();
-        }
-        // const nextPart = part.
-        // part = this.spath(path, index++);
-        return part;
+    spath(path) {
+        return new SmlPath_1.default(this.getRoot()).get(path);
     }
 }
 exports.default = SmlDocument;

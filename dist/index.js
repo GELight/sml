@@ -48,18 +48,20 @@ GPSData
     Author James
     Description "My favorite routes"
   End
-  Route "Hier gehts lang..."
+  Route "Hier gehts lang"
+  Route "Hier noch ein lustiger Weg"
   Route
     Name "Route 1"
     Waypoints
       Waypoint -43.3081 171.7652 "Waypoint A"
-      @Waypoint -43.2773 171.7552 "Waypoint B"
+      Waypoint -43.2773 171.7552 "Waypoint B"
       Waypoint -43.2588 171.7705 "Waypoint C"
     End
   End
 End
 `);
-const document = doc.getRoot().toString();
-console.log(document);
-doc.spath("Route Waypoints @Waypoint");
+// const document = doc.getRoot().toString();
+// console.log(document);
+// console.log(doc.spath("Route Waypoints @Waypoint"));
+console.log(doc.spath("MetaData @Description"));
 //# sourceMappingURL=index.js.map
