@@ -14,7 +14,10 @@
       "node_modules",
       "**/*.spec.ts"
     ],
+    "include": [
+      "**/*.ts",
+    ],
     "files": [
-      "main.d.ts"
+      "types.d.ts"
     ]
   }
