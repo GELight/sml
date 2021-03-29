@@ -1,41 +1,48 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-var ReliableTxtDocument_1 = require("./sml/ReliableTxtDocument");
-Object.defineProperty(exports, "ReliableTxtDocument", { enumerable: true, get: function () { return ReliableTxtDocument_1.default; } });
-var ReliableTxtDocumentServer_1 = require("./sml/ReliableTxtDocumentServer");
-Object.defineProperty(exports, "ReliableTxtDocumentServer", { enumerable: true, get: function () { return ReliableTxtDocumentServer_1.default; } });
-var ReliableTxtException_1 = require("./sml/ReliableTxtException");
-Object.defineProperty(exports, "ReliableTxtException", { enumerable: true, get: function () { return ReliableTxtException_1.default; } });
-var ReliableTxtEncoding_1 = require("./sml/ReliableTxtEncoding");
-Object.defineProperty(exports, "ReliableTxtEncoding", { enumerable: true, get: function () { return ReliableTxtEncoding_1.default; } });
-var ReliableTxtFile_1 = require("./sml/ReliableTxtFile");
-Object.defineProperty(exports, "ReliableTxtFile", { enumerable: true, get: function () { return ReliableTxtFile_1.default; } });
-var SmlAttribute_1 = require("./sml/SmlAttribute");
-Object.defineProperty(exports, "SmlAttribute", { enumerable: true, get: function () { return SmlAttribute_1.default; } });
-var SmlDocument_1 = require("./sml/SmlDocument");
-Object.defineProperty(exports, "SmlDocument", { enumerable: true, get: function () { return SmlDocument_1.default; } });
-var SmlDocumentServer_1 = require("./sml/SmlDocumentServer");
-Object.defineProperty(exports, "SmlDocumentServer", { enumerable: true, get: function () { return SmlDocumentServer_1.default; } });
-var SmlElement_1 = require("./sml/SmlElement");
-Object.defineProperty(exports, "SmlElement", { enumerable: true, get: function () { return SmlElement_1.default; } });
-var SmlNamedNode_1 = require("./sml/SmlNamedNode");
-Object.defineProperty(exports, "SmlNamedNode", { enumerable: true, get: function () { return SmlNamedNode_1.default; } });
-var SmlNode_1 = require("./sml/SmlNode");
-Object.defineProperty(exports, "SmlNode", { enumerable: true, get: function () { return SmlNode_1.default; } });
-var SmlEmptyNode_1 = require("./sml/SmlEmptyNode");
-Object.defineProperty(exports, "SmlEmptyNode", { enumerable: true, get: function () { return SmlEmptyNode_1.default; } });
-var SmlParserException_1 = require("./sml/SmlParserException");
-Object.defineProperty(exports, "SmlParserException", { enumerable: true, get: function () { return SmlParserException_1.default; } });
-var WsvChar_1 = require("./sml/WsvChar");
-Object.defineProperty(exports, "WsvChar", { enumerable: true, get: function () { return WsvChar_1.default; } });
-var WsvLine_1 = require("./sml/WsvLine");
-Object.defineProperty(exports, "WsvLine", { enumerable: true, get: function () { return WsvLine_1.default; } });
-var WsvDocument_1 = require("./sml/WsvDocument");
-Object.defineProperty(exports, "WsvDocument", { enumerable: true, get: function () { return WsvDocument_1.default; } });
-var WsvDocumentServer_1 = require("./sml/WsvDocumentServer");
-Object.defineProperty(exports, "WsvDocumentServer", { enumerable: true, get: function () { return WsvDocumentServer_1.default; } });
-var WsvParserException_1 = require("./sml/WsvParserException");
-Object.defineProperty(exports, "WsvParserException", { enumerable: true, get: function () { return WsvParserException_1.default; } });
-var StringUtil_1 = require("./sml/StringUtil");
-Object.defineProperty(exports, "StringUtil", { enumerable: true, get: function () { return StringUtil_1.default; } });
+const ReliableTxtDocument_1 = __importDefault(require("./sml/ReliableTxtDocument"));
+const ReliableTxtDocumentServer_1 = __importDefault(require("./sml/ReliableTxtDocumentServer"));
+const ReliableTxtEncoding_1 = __importDefault(require("./sml/ReliableTxtEncoding"));
+const ReliableTxtException_1 = __importDefault(require("./sml/ReliableTxtException"));
+const ReliableTxtFile_1 = __importDefault(require("./sml/ReliableTxtFile"));
+const SmlAttribute_1 = __importDefault(require("./sml/SmlAttribute"));
+const SmlDocument_1 = __importDefault(require("./sml/SmlDocument"));
+const SmlDocumentServer_1 = __importDefault(require("./sml/SmlDocumentServer"));
+const SmlElement_1 = __importDefault(require("./sml/SmlElement"));
+const SmlEmptyNode_1 = __importDefault(require("./sml/SmlEmptyNode"));
+const SmlNamedNode_1 = __importDefault(require("./sml/SmlNamedNode"));
+const SmlNode_1 = __importDefault(require("./sml/SmlNode"));
+const SmlParserException_1 = __importDefault(require("./sml/SmlParserException"));
+const SmlRequest_1 = __importDefault(require("./sml/SmlRequest"));
+const WsvChar_1 = __importDefault(require("./sml/WsvChar"));
+const WsvDocument_1 = __importDefault(require("./sml/WsvDocument"));
+const WsvDocumentServer_1 = __importDefault(require("./sml/WsvDocumentServer"));
+const WsvLine_1 = __importDefault(require("./sml/WsvLine"));
+const WsvParserException_1 = __importDefault(require("./sml/WsvParserException"));
+const StringUtil_1 = __importDefault(require("./sml/StringUtil"));
+exports.default = {
+    ReliableTxtDocument: ReliableTxtDocument_1.default,
+    ReliableTxtDocumentServer: ReliableTxtDocumentServer_1.default,
+    ReliableTxtEncoding: ReliableTxtEncoding_1.default,
+    ReliableTxtException: ReliableTxtException_1.default,
+    ReliableTxtFile: ReliableTxtFile_1.default,
+    SmlAttribute: SmlAttribute_1.default,
+    SmlDocument: SmlDocument_1.default,
+    SmlDocumentServer: SmlDocumentServer_1.default,
+    SmlElement: SmlElement_1.default,
+    SmlEmptyNode: SmlEmptyNode_1.default,
+    SmlNamedNode: SmlNamedNode_1.default,
+    SmlNode: SmlNode_1.default,
+    SmlParserException: SmlParserException_1.default,
+    SmlRequest: SmlRequest_1.default,
+    WsvChar: WsvChar_1.default,
+    WsvDocument: WsvDocument_1.default,
+    WsvDocumentServer: WsvDocumentServer_1.default,
+    WsvLine: WsvLine_1.default,
+    WsvParserException: WsvParserException_1.default,
+    StringUtil: StringUtil_1.default
+};
 //# sourceMappingURL=index.js.map

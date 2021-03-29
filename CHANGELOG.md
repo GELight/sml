@@ -4,3 +4,10 @@
 
 * **sml:** provide the initial sml package on [npmjs.org](https://www.npmjs.com/package/@gelight/sml)
 
+## [0.1.0](https://github.com/GELight/sml) (2021-04-12)
+
+### SmlRequest
+
+* **SmlRequest class:** provide a new class for client side SML requests
+* **sml:** remove generated technical docs based on markdown
+* **typescript:** rename type definition file from main.d.ts into types.d.ts
