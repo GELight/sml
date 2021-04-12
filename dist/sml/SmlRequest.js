@@ -23,7 +23,6 @@ class SmlRequest {
                 status: 200
             });
             const responseText = yield response.text();
-            console.log("responseText >>>", responseText);
             return SmlDocument_1.default.parse(responseText);
         });
     }
