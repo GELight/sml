@@ -8,74 +8,32 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const SmlDocument_1 = __importDefault(require("./SmlDocument"));
+console.log("Experimental > SmlRequest: This feature is a work in progress. Don't depend on it yet. It may go through significant changes.");
 class SmlRequest {
     static get(url) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = new Response(`Test\nEnd`, {
-                headers: {
-                    "Content-Type": "text/plain"
-                },
-                status: 200
-            });
-            const responseText = yield response.text();
-            return SmlDocument_1.default.parse(responseText);
+            return null;
         });
     }
     static post(url, data) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch(url, {
-                body: data.toString(),
-                headers: {
-                    "Accept": "text/plain",
-                    "Content-Type": "text/plain"
-                },
-                method: "post"
-            });
-            const responseText = yield response.text();
-            return SmlDocument_1.default.parse(responseText);
+            return null;
         });
     }
     static delete(url) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch(url, {
-                headers: {
-                    "Content-Type": "text/plain"
-                },
-                method: "delete"
-            });
-            const responseText = yield response.text();
-            return SmlDocument_1.default.parse(responseText);
+            return null;
         });
     }
     static put(url, data) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch(url, {
-                body: data.toString(),
-                headers: {
-                    "Content-Type": "text/plain"
-                },
-                method: "put"
-            });
-            const responseText = yield response.text();
-            return SmlDocument_1.default.parse(responseText);
+            return null;
         });
     }
     static patch(url, data) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch(url, {
-                body: data.toString(),
-                headers: {
-                    "Content-Type": "text/plain"
-                },
-                method: "patch"
-            });
-            const responseText = yield response.text();
-            return SmlDocument_1.default.parse(responseText);
+            return null;
         });
     }
 }
