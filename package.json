@@ -40,6 +40,5 @@
   },
   "files": [
     "dist"
-  ],
-  "types": "types.d.ts"
+  ]
 }

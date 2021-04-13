@@ -22,7 +22,7 @@ import WsvParserException from "./sml/WsvParserException";
 
 import StringUtil from "./sml/StringUtil";
 
-export default {
+export {
     ReliableTxtDocument,
     ReliableTxtDocumentServer,
     ReliableTxtEncoding,

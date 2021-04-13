@@ -17,7 +17,7 @@
     "include": [
       "**/*.ts",
     ],
-    "files": [
-      "types.d.ts"
+    "typeRoots": [
+      "./types"
     ]
   }
