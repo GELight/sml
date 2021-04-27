@@ -1,5 +1,5 @@
+import { StringUtil } from "@gelight/whitespacesv";
 import SmlNode from "./SmlNode";
-import StringUtil from "./StringUtil";
 
 export default class SmlNamedNode extends SmlNode {
 

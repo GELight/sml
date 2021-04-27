@@ -1,8 +1,8 @@
+import { StringUtil } from "@gelight/whitespacesv";
 import SmlElement from "./SmlElement";
 import SmlEmptyNode from "./SmlEmptyNode";
 import SmlParser from "./SmlParser";
 import SmlSerializer from "./SmlSerializer";
-import StringUtil from "./StringUtil";
 
 export default class SmlDocument {
 

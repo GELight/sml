@@ -1,8 +1,19 @@
-import ReliableTxtDocument from "./sml/ReliableTxtDocument";
-import ReliableTxtDocumentServer from "./sml/ReliableTxtDocumentServer";
-import ReliableTxtEncoding from "./sml/ReliableTxtEncoding";
-import ReliableTxtException from "./sml/ReliableTxtException";
-import ReliableTxtFile from "./sml/ReliableTxtFile";
+import {
+    ReliableTxtDocument,
+    ReliableTxtDocumentServer,
+    ReliableTxtEncoding,
+    ReliableTxtException,
+    ReliableTxtFile
+} from "@gelight/reliabletxt";
+
+import {
+    StringUtil,
+    WsvChar,
+    WsvDocument,
+    WsvDocumentServer,
+    WsvLine,
+    WsvParserException
+} from "@gelight/whitespacesv";
 
 import SmlAttribute from "./sml/SmlAttribute";
 import SmlDocument from "./sml/SmlDocument";
@@ -13,14 +24,6 @@ import SmlNamedNode from "./sml/SmlNamedNode";
 import SmlNode from "./sml/SmlNode";
 import SmlParserException from "./sml/SmlParserException";
 import SmlRequest from "./sml/SmlRequest";
-
-import WsvChar from "./sml/WsvChar";
-import WsvDocument from "./sml/WsvDocument";
-import WsvDocumentServer from "./sml/WsvDocumentServer";
-import WsvLine from "./sml/WsvLine";
-import WsvParserException from "./sml/WsvParserException";
-
-import StringUtil from "./sml/StringUtil";
 
 export {
     ReliableTxtDocument,

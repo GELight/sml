@@ -1,24 +1,21 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const WsvDocument_1 = __importDefault(require("./WsvDocument"));
+const whitespacesv_1 = require("@gelight/whitespacesv");
 class SmlSerializer {
     static serializeDocument(document) {
-        const wsvDocument = new WsvDocument_1.default();
+        const wsvDocument = new whitespacesv_1.WsvDocument();
         SmlSerializer.serialzeEmptyNodes(document.emptyNodesBefore, wsvDocument);
         document.getRoot().toWsvLines(wsvDocument, 0, document.getDefaultIndentation(), document.getEndKeyword());
         SmlSerializer.serialzeEmptyNodes(document.emptyNodesAfter, wsvDocument);
         return wsvDocument.toString();
     }
     static serializeElement(element) {
-        const wsvDocument = new WsvDocument_1.default();
+        const wsvDocument = new whitespacesv_1.WsvDocument();
         element.toWsvLines(wsvDocument, 0, null, "End");
         return wsvDocument.toString();
     }
     static serializeAttribute(attribute) {
-        const wsvDocument = new WsvDocument_1.default();
+        const wsvDocument = new whitespacesv_1.WsvDocument();
         attribute.toWsvLines(wsvDocument, 0, null, null);
         return wsvDocument.toString();
     }
@@ -28,7 +25,7 @@ class SmlSerializer {
         wsvDocument.addWsvLineBySet(combined, whitespaces, attribute.getComment());
     }
     static serializeEmptyNode(emptyNode) {
-        const wsvDocument = new WsvDocument_1.default();
+        const wsvDocument = new whitespacesv_1.WsvDocument();
         emptyNode.toWsvLines(wsvDocument, 0, null, null);
         return wsvDocument.toString();
     }

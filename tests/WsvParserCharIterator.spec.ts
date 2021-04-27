@@ -1,6 +1,4 @@
-import StringUtil from "../src/sml/StringUtil";
-import WsvParserCharIterator from "../src/sml/WsvParserCharIterator";
-import WsvParserException from "../src/sml/WsvParserException";
+import { StringUtil, WsvParserCharIterator, WsvParserException } from "@gelight/whitespacesv";
 
 describe("WsvParserCharIterator", () => {
 

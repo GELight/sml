@@ -1,9 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const WsvLine_1 = __importDefault(require("./WsvLine"));
+const whitespacesv_1 = require("@gelight/whitespacesv");
 class SmlNode {
     constructor() {
         this.whitespaces = null;
@@ -11,14 +8,14 @@ class SmlNode {
         // ...
     }
     setWhitespaces(...whitespaces) {
-        WsvLine_1.default.validateWhitespaces(whitespaces);
+        whitespacesv_1.WsvLine.validateWhitespaces(whitespaces);
         this.whitespaces = whitespaces;
     }
     getWhitespaces() {
         return [...this.whitespaces];
     }
     setComment(comment) {
-        WsvLine_1.default.validateComment(comment);
+        whitespacesv_1.WsvLine.validateComment(comment);
         this.comment = comment;
     }
     getComment() {

@@ -1,7 +1,6 @@
+import { WsvDocument } from "@gelight/whitespacesv";
 import SmlNamedNode from "./SmlNamedNode";
 import SmlSerializer from "./SmlSerializer";
-import StringUtil from "./StringUtil";
-import WsvDocument from "./WsvDocument";
 
 export default class SmlAttribute extends SmlNamedNode {
 

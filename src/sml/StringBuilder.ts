@@ -1,4 +1,4 @@
-import StringUtil from "./StringUtil";
+import { StringUtil } from "@gelight/whitespacesv";
 
 export default class StringBuilder {
 
