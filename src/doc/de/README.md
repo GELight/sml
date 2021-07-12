@@ -1,4 +1,4 @@
-# SML
+y# SML
 
 The Simple Markup Language
 
@@ -14,14 +14,14 @@ SML ist ein Dateiformat, welches in seiner Schlichtheit kaum zu schlagen ist.
 Es vereint die Möglichkeiten der in der Praxis weit verbreiteten Formate und ist eine wirkliche Alternative zu Formaten wie beispielsweise **json**, **xml** oder **yml**.
 
 SML gliedert sich in **3 wesentliche technische Bereiche**, die auf den folgenden Seiten genauer dokumentiert sind:
-* [ReliableTxt](https://www.reliabletxt.com) - Das zuverlässige Textdateiformat
-* [WhitespaceSV](https://www.whitespacesv.com) - Leerraum getrennte Werteformate
-* [SimpleML](https://www.simpleml.com) - Einfache Markup-Sprache
+* [ReliableTxt](https://dev.stenway.com/SML) - Das zuverlässige Textdateiformat
+* [WhitespaceSV](https://dev.stenway.com/WSV/) - Leerraum getrennte Werteformate
+* [SimpleML](https://dev.stenway.com/SML/) - Einfache Markup-Sprache
 
 Alle 3 Bereiche können unabhängig voneinander eingesetzt werden.
-* Die Suche nach einer intuitiven und zuverlässigen Alternative zu CSV sollte mit [WhitespaceSV](https://www.whitespacesv.com) beendet sein.
-* Wird ein zuverlässiges Textdateiformat benötigt, dann ist [ReliableTxt](https://www.reliabletxt.com) die Lösung.
-* Für das Schreiben von kompletten Dokumenten ist [SimpleML](https://www.simpleml.com) die Wahl der Wahl.
+* Die Suche nach einer intuitiven und zuverlässigen Alternative zu CSV sollte mit [WhitespaceSV](https://dev.stenway.com/WSV/) beendet sein.
+* Wird ein zuverlässiges Textdateiformat benötigt, dann ist [ReliableTxt](https://dev.stenway.com/SML) die Lösung.
+* Für das Schreiben von kompletten Dokumenten ist [SimpleML](https://dev.stenway.com/SML/) die Wahl der Wahl.
 
 ### Was unterscheidet SML von anderen Formaten?
 
