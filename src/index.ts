@@ -3,10 +3,8 @@ import {
     ReliableTxtDocumentServer,
     ReliableTxtEncoding,
     ReliableTxtException,
-    ReliableTxtFile
-} from "@gelight/reliabletxt";
+    ReliableTxtFile,
 
-import {
     StringUtil,
     WsvChar,
     WsvDocument,

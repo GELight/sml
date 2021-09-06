@@ -4,13 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StringUtil = exports.WsvParserException = exports.WsvLine = exports.WsvDocumentServer = exports.WsvDocument = exports.WsvChar = exports.SmlRequest = exports.SmlParserException = exports.SmlNode = exports.SmlNamedNode = exports.SmlEmptyNode = exports.SmlElement = exports.SmlDocumentServer = exports.SmlDocument = exports.SmlAttribute = exports.ReliableTxtFile = exports.ReliableTxtException = exports.ReliableTxtEncoding = exports.ReliableTxtDocumentServer = exports.ReliableTxtDocument = void 0;
-const reliabletxt_1 = require("@gelight/reliabletxt");
-Object.defineProperty(exports, "ReliableTxtDocument", { enumerable: true, get: function () { return reliabletxt_1.ReliableTxtDocument; } });
-Object.defineProperty(exports, "ReliableTxtDocumentServer", { enumerable: true, get: function () { return reliabletxt_1.ReliableTxtDocumentServer; } });
-Object.defineProperty(exports, "ReliableTxtEncoding", { enumerable: true, get: function () { return reliabletxt_1.ReliableTxtEncoding; } });
-Object.defineProperty(exports, "ReliableTxtException", { enumerable: true, get: function () { return reliabletxt_1.ReliableTxtException; } });
-Object.defineProperty(exports, "ReliableTxtFile", { enumerable: true, get: function () { return reliabletxt_1.ReliableTxtFile; } });
 const whitespacesv_1 = require("@gelight/whitespacesv");
+Object.defineProperty(exports, "ReliableTxtDocument", { enumerable: true, get: function () { return whitespacesv_1.ReliableTxtDocument; } });
+Object.defineProperty(exports, "ReliableTxtDocumentServer", { enumerable: true, get: function () { return whitespacesv_1.ReliableTxtDocumentServer; } });
+Object.defineProperty(exports, "ReliableTxtEncoding", { enumerable: true, get: function () { return whitespacesv_1.ReliableTxtEncoding; } });
+Object.defineProperty(exports, "ReliableTxtException", { enumerable: true, get: function () { return whitespacesv_1.ReliableTxtException; } });
+Object.defineProperty(exports, "ReliableTxtFile", { enumerable: true, get: function () { return whitespacesv_1.ReliableTxtFile; } });
 Object.defineProperty(exports, "StringUtil", { enumerable: true, get: function () { return whitespacesv_1.StringUtil; } });
 Object.defineProperty(exports, "WsvChar", { enumerable: true, get: function () { return whitespacesv_1.WsvChar; } });
 Object.defineProperty(exports, "WsvDocument", { enumerable: true, get: function () { return whitespacesv_1.WsvDocument; } });
