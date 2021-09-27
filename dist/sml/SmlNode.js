@@ -12,6 +12,9 @@ class SmlNode {
         this.whitespaces = whitespaces;
     }
     getWhitespaces() {
+        if (this.whitespaces === null) {
+            return null;
+        }
         return [...this.whitespaces];
     }
     setComment(comment) {

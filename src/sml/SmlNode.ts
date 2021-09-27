@@ -15,6 +15,9 @@ export default class SmlNode {
     }
 
     public getWhitespaces(): string[] {
+        if (this.whitespaces === null) {
+            return null;
+        }
         return [...this.whitespaces];
     }
 
