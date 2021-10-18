@@ -1,10 +1,16 @@
-import { StringUtil, WsvDocument, WsvDocumentLineIterator, WsvLine, WsvLineIterator } from "@gelight/whitespacesv";
+import WsvDocument from "../whitespacesv/WsvDocument";
+import WsvDocumentLineIterator from "../whitespacesv/WsvDocumentLineIterator";
+import WsvLine from "../whitespacesv/WsvLine";
+import WsvLineIterator from "../whitespacesv/WsvLineIterator";
+
 import SmlAttribute from "./SmlAttribute";
 import SmlDocument from "./SmlDocument";
 import SmlElement from "./SmlElement";
 import SmlEmptyNode from "./SmlEmptyNode";
 import SmlNode from "./SmlNode";
 import SmlParserException from "./SmlParserException";
+
+import StringUtil from "./StringUtil";
 
 export default class SmlParser {
 

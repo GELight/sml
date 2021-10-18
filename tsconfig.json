@@ -1,23 +1,21 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist",
-    },
-    "lib": [
-      "es2015"
-    ],
-    "exclude": [
-      "node_modules",
-      "**/*.spec.ts"
-    ],
-    "include": [
-      "**/*.ts",
-    ],
-    "typeRoots": [
-      "./types"
-    ]
-  }
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "src"
+  },
+  "lib": [
+    "es2016"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests/**/*.spec.ts"
+  ],
+  "typeRoots": [
+    "./types"
+  ]
+}

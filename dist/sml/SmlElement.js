@@ -3,25 +3,28 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const whitespacesv_1 = require("@gelight/whitespacesv");
 const SmlAttribute_1 = __importDefault(require("./SmlAttribute"));
 const SmlEmptyNode_1 = __importDefault(require("./SmlEmptyNode"));
 const SmlNamedNode_1 = __importDefault(require("./SmlNamedNode"));
 const SmlSerializer_1 = __importDefault(require("./SmlSerializer"));
+const WsvLine_1 = __importDefault(require("../whitespacesv/WsvLine"));
 class SmlElement extends SmlNamedNode_1.default {
     constructor(name) {
         super(name);
         this.nodes = [];
     }
     setEndWhitespaces(...whitespaces) {
-        whitespacesv_1.WsvLine.validateWhitespaces(whitespaces);
+        WsvLine_1.default.validateWhitespaces(whitespaces);
         this.endWhitespaces = whitespaces;
     }
     getEndWhitespaces() {
+        if (!this.endWhitespaces) {
+            return null;
+        }
         return [...this.endWhitespaces];
     }
     setEndComment(comment) {
-        whitespacesv_1.WsvLine.validateComment(comment);
+        WsvLine_1.default.validateComment(comment);
         this.endComment = comment;
     }
     getEndComment() {

@@ -1,4 +1,4 @@
-import { WsvDocument } from "@gelight/whitespacesv";
+import WsvDocument from "../whitespacesv/WsvDocument";
 import SmlNode from "./SmlNode";
 import SmlSerializer from "./SmlSerializer";
 

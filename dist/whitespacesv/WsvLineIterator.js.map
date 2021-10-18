@@ -1,0 +1,1 @@
+{"version":3,"file":"WsvLineIterator.js","sourceRoot":"","sources":["../../src/whitespacesv/WsvLineIterator.ts"],"names":[],"mappings":";;AAEA,MAAqB,eAAe;IAEhC;QACI,MAAM;IACV,CAAC;IAEM,OAAO;QACV,OAAO,KAAK,CAAC;IACjB,CAAC;IAEM,WAAW;QACd,OAAO,KAAK,CAAC;IACjB,CAAC;IAEM,OAAO;QACV,OAAO,IAAI,CAAC;IAChB,CAAC;IAEM,aAAa;QAChB,OAAO,IAAI,CAAC;IAChB,CAAC;CAEJ;AAtBD,kCAsBC"}

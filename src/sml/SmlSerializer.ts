@@ -1,4 +1,4 @@
-import { WsvDocument } from "@gelight/whitespacesv";
+import WsvDocument from "../whitespacesv/WsvDocument";
 import SmlAttribute from "./SmlAttribute";
 import SmlDocument from "./SmlDocument";
 import SmlElement from "./SmlElement";

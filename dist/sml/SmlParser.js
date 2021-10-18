@@ -3,16 +3,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const whitespacesv_1 = require("@gelight/whitespacesv");
+const WsvDocument_1 = __importDefault(require("../whitespacesv/WsvDocument"));
+const WsvDocumentLineIterator_1 = __importDefault(require("../whitespacesv/WsvDocumentLineIterator"));
 const SmlAttribute_1 = __importDefault(require("./SmlAttribute"));
 const SmlElement_1 = __importDefault(require("./SmlElement"));
 const SmlEmptyNode_1 = __importDefault(require("./SmlEmptyNode"));
 const SmlParserException_1 = __importDefault(require("./SmlParserException"));
+const StringUtil_1 = __importDefault(require("./StringUtil"));
 class SmlParser {
     static parseDocument(content, document) {
-        const wsvDocument = whitespacesv_1.WsvDocument.parse(content);
+        const wsvDocument = WsvDocument_1.default.parse(content);
         const endKeyword = SmlParser.getEndKeyword(wsvDocument);
-        const iterator = new whitespacesv_1.WsvDocumentLineIterator(wsvDocument, endKeyword);
+        const iterator = new WsvDocumentLineIterator_1.default(wsvDocument, endKeyword);
         document.setEndKeyword(endKeyword);
         const rootElement = SmlParser.readRootElement(iterator, document.emptyNodesBefore);
         document.setRoot(rootElement);
@@ -27,7 +29,7 @@ class SmlParser {
         }
         const rootStartLine = iterator.getLine();
         if (!rootStartLine.hasValues() || rootStartLine.getValues().length !== 1 ||
-            whitespacesv_1.StringUtil.equalsIgnoreCase(rootStartLine.getValues()[0], iterator.getEndKeyword())) {
+            StringUtil_1.default.equalsIgnoreCase(rootStartLine.getValues()[0], iterator.getEndKeyword())) {
             throw new SmlParserException_1.default("Invalid root element start");
         }
         const rootElementName = rootStartLine.getValues()[0];
@@ -40,7 +42,7 @@ class SmlParser {
         const line = iterator.getLine();
         if (line.hasValues()) {
             const name = line.getValues()[0];
-            if (whitespacesv_1.StringUtil.equalsIgnoreCase(name, iterator.getEndKeyword())) {
+            if (StringUtil_1.default.equalsIgnoreCase(name, iterator.getEndKeyword())) {
                 if (line.getValues().length > 1) {
                     throw new SmlParserException_1.default("Attribute with end keyword name is not allowed");
                 }

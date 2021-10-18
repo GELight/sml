@@ -1,7 +1,6 @@
-import {
-    ReliableTxtDocumentServer,
-    ReliableTxtEncoding
-} from "@gelight/whitespacesv";
+import ReliableTxtDocumentServer from "../reliabletxt/ReliableTxtDocumentServer";
+import ReliableTxtEncoding from "../reliabletxt/ReliableTxtEncoding";
+
 import SmlDocument from "./SmlDocument";
 import SmlElement from "./SmlElement";
 import SmlParser from "./SmlParser";

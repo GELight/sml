@@ -1,4 +1,4 @@
-import SmlDocument from "./../src/sml/SmlDocument";
+import SmlDocument from "../../src/sml/SmlDocument";
 
 describe("SmlDocument", () => {
 

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const whitespacesv_1 = require("@gelight/whitespacesv");
+const StringUtil_1 = __importDefault(require("./StringUtil"));
 const SmlParser_1 = __importDefault(require("./SmlParser"));
 const SmlSerializer_1 = __importDefault(require("./SmlSerializer"));
 class SmlDocument {
@@ -27,7 +27,7 @@ class SmlDocument {
         return this.endKeyword;
     }
     setDefaultIndentation(defaultIndentation) {
-        if (!whitespacesv_1.StringUtil.isWhitespaceOrEmpty(defaultIndentation)) {
+        if (!StringUtil_1.default.isWhitespaceOrEmpty(defaultIndentation)) {
             throw Error("Invalid indentation");
         }
         this.defaultIndentation = defaultIndentation;

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const whitespacesv_1 = require("@gelight/whitespacesv");
+const StringUtil_1 = __importDefault(require("../sml/StringUtil"));
 const SmlNode_1 = __importDefault(require("./SmlNode"));
 class SmlNamedNode extends SmlNode_1.default {
     constructor(name) {
@@ -11,7 +11,7 @@ class SmlNamedNode extends SmlNode_1.default {
         this.name = name;
     }
     hasName(name) {
-        return whitespacesv_1.StringUtil.equalsIgnoreCase(this.name, name);
+        return StringUtil_1.default.equalsIgnoreCase(this.name, name);
     }
 }
 exports.default = SmlNamedNode;

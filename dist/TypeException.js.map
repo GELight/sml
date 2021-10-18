@@ -1,0 +1,1 @@
+{"version":3,"file":"TypeException.js","sourceRoot":"","sources":["../src/TypeException.ts"],"names":[],"mappings":";;AAAA,MAAqB,aAAc,SAAQ,SAAS;IAChD,YAAY,OAAe;QACvB,KAAK,CAAC,OAAO,CAAC,CAAC;QAEf,IAAI,KAAK,CAAC,iBAAiB,EAAE;YACzB,KAAK,CAAC,iBAAiB,CAAC,IAAI,EAAE,aAAa,CAAC,CAAC;SAChD;IAEL,CAAC;CACJ;AATD,gCASC"}

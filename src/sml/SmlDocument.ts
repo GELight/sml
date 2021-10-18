@@ -1,4 +1,4 @@
-import { StringUtil } from "@gelight/whitespacesv";
+import StringUtil from "./StringUtil";
 import SmlElement from "./SmlElement";
 import SmlEmptyNode from "./SmlEmptyNode";
 import SmlParser from "./SmlParser";
