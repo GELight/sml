@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const whitespacesv_1 = require("@gelight/whitespacesv");
+const StringUtil_1 = __importDefault(require("./StringUtil"));
 class StringBuilder {
     constructor() {
         this.codePoints = [];
@@ -10,13 +13,13 @@ class StringBuilder {
         this.codePoints = [];
     }
     toString() {
-        return whitespacesv_1.StringUtil.codePointsToString(this.codePoints);
+        return StringUtil_1.default.codePointsToString(this.codePoints);
     }
     appendCodePoint(codePoint) {
         this.codePoints.push(codePoint);
     }
     appendString(str) {
-        const codePointsArray = whitespacesv_1.StringUtil.stringToCodePoints(str);
+        const codePointsArray = StringUtil_1.default.stringToCodePoints(str);
         this.codePoints = [...this.codePoints, ...codePointsArray];
     }
     getLength() {

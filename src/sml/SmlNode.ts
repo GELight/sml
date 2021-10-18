@@ -1,4 +1,5 @@
-import { WsvDocument, WsvLine } from "@gelight/whitespacesv";
+import WsvDocument from "../whitespacesv/WsvDocument";
+import WsvLine from "../whitespacesv/WsvLine";
 
 export default class SmlNode {
 
@@ -15,7 +16,7 @@ export default class SmlNode {
     }
 
     public getWhitespaces(): string[] {
-        if (this.whitespaces === null) {
+        if (!this.whitespaces) {
             return null;
         }
         return [...this.whitespaces];

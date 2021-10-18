@@ -1,4 +1,4 @@
-y# SML
+# SML
 
 The Simple Markup Language
 

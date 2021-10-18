@@ -1,9 +1,11 @@
-import { WsvDocument, WsvLine } from "@gelight/whitespacesv";
 import SmlAttribute from "./SmlAttribute";
 import SmlEmptyNode from "./SmlEmptyNode";
 import SmlNamedNode from "./SmlNamedNode";
 import SmlNode from "./SmlNode";
 import SmlSerializer from "./SmlSerializer";
+
+import WsvDocument from "../whitespacesv/WsvDocument";
+import WsvLine from "../whitespacesv/WsvLine";
 
 export default class SmlElement extends SmlNamedNode {
 
@@ -22,6 +24,9 @@ export default class SmlElement extends SmlNamedNode {
     }
 
     public getEndWhitespaces(): string[] {
+        if (!this.endWhitespaces) {
+            return null;
+        }
         return [...this.endWhitespaces];
     }
 
