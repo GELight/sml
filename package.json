@@ -1,7 +1,7 @@
 {
   "name": "@gelight/sml",
   "private": false,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Simple Markup Language",
   "main": "dist/index.js",
   "repository": {
