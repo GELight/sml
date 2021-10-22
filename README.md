@@ -2,7 +2,7 @@
 
 The Simple Markup Language
 
-> This library unites the world of XML, WhitespaceS and ReliableTxt.
+> This library unites the world of SML, WhitespaceSV and ReliableTxt.
 
 ---
 
