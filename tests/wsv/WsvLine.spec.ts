@@ -19,6 +19,8 @@ describe("WsvLine", () => {
         expect(wsvLine).toBeInstanceOf(WsvLine);
         // then
         expect(wsvLine.getValues()).toEqual([ 'My Value', 'My "Value"', 'MyValue#1', 'Line1 ', '-', 'MyValue' ]);
+        expect(wsvLine.getComment()).toBe(null);
+        expect(wsvLine.getWhitespaces()).toBe(null);
     });
 
     it.each`

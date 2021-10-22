@@ -24,7 +24,7 @@ export default class WsvLine {
     }
 
     public static validateComment(comment: string): void {
-        TypeGuard.assureString(comment);
+        TypeGuard.assureString(comment, [NULLABLE]);
 
         if (comment !== null && comment.indexOf("\n") >= 0) {
             throw new Error("Line break in comment is not allowed");

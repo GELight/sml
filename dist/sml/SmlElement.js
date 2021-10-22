@@ -12,6 +12,7 @@ class SmlElement extends SmlNamedNode_1.default {
     constructor(name) {
         super(name);
         this.nodes = [];
+        this.endComment = null;
     }
     setEndWhitespaces(...whitespaces) {
         WsvLine_1.default.validateWhitespaces(whitespaces);

@@ -58,7 +58,6 @@ export default class SmlSerializer {
         level: number, defaultIndentation: string, endKeyword: string
     ): void {
         const childLevel: number = level + 1;
-
         const whitespaces: string[] = SmlSerializer.getWhitespaces(element.getWhitespaces(), level, defaultIndentation);
         wsvDocument.addWsvLineBySet([element.name], whitespaces, element.getComment());
 

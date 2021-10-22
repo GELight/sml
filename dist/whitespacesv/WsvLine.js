@@ -33,7 +33,7 @@ class WsvLine {
         }
     }
     static validateComment(comment) {
-        TypeGuard_1.TypeGuard.assureString(comment);
+        TypeGuard_1.TypeGuard.assureString(comment, [TypeGuard_1.NULLABLE]);
         if (comment !== null && comment.indexOf("\n") >= 0) {
             throw new Error("Line break in comment is not allowed");
         }

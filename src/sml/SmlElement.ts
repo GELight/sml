@@ -12,7 +12,7 @@ export default class SmlElement extends SmlNamedNode {
     public nodes: SmlNode[] = [];
 
     private endWhitespaces: string[];
-    private endComment: string;
+    private endComment: string = null;
 
     constructor(name: string) {
         super(name);

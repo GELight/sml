@@ -26,7 +26,6 @@ export default class WsvSerializer {
         } else {
             WsvSerializer.serializeValuesWithoutWhitespace(sb, line);
         }
-
         if (line.getComment() !== null) {
             sb.appendCodePoint(StringUtil.hash);
             sb.appendString(line.getComment());
@@ -45,6 +44,7 @@ export default class WsvSerializer {
             }
             WsvSerializer.serializeLine(sb, line);
         }
+
         return sb.toString();
     }
 
