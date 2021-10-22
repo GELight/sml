@@ -49,7 +49,6 @@ describe("WsvLine", () => {
 
     it.each`
         comment
-        ${null}
         ${undefined}
         ${[null]}
         ${[1]}
